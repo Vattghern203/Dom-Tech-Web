@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM na Prática</title>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>DOM na Prática</h1>
+
+        <p id="ex0">Para começar, vamos fazer o ritual de iniciação.</p>
+
+        <p id="ex1">
+
+            <!--O Hello World aparecerá nesse elemento quando se clica no botão "Iniciar"-->
+
+        </p> 
+
+        <button class="btn" id="btn-init" onclick="HelloWorld()">Iniciar</button> 
+
+        <br>
+
+        <div class="container-list">
+
+            <p>Nesse simples exemplo, conseguimos fazer uso de vários métodos do DOM.</p>
+
+            <p>Aqui está uma lista com eles:</p>
+
+            <ul id="lista">
+
+                <li>getElementById;</li>
+
+                <li>querySelector;</li>
+
+                <li>innerText;</li>
+
+                <li>innerHTML;</li>
+
+            </ul>
+
+            <br>
+
+            <p id="list-paragraf-1">Parece que ficou faltando o remove &#x1F914; </p>
+
+            <p id="list-paragraf-2">Clique aqui para adicioná-lo.</p>
+
+            <button class="btn" id="btn-list" onclick="Listar()">Listar</button>
+
+        </div>
+
+        <br>
+
+        <div class="container-style">
+
+            <h2>DOM com Estilo</h2>
+
+            <p>Com o DOM é possível mudar os estilos das tags de forma dinâmica.</p>
+
+            <p>Podemos mudar a cor do fundo da página, a cor da fonte, o display de tags, imagens e etc...</p>
+
+            <button class="btn" onclick="MudarDark()" ondblclick="MudarLight()">Mudar</button>
+
+            <a href="#" onclick="Mostrar()">.</a>
+
+        </div>
+
+        <div id="hidden" class="container-hidden">
+
+            Essa é uma div secreta &#x1F92B;
+
+            <img id="imagem" src="media/good.jpg" alt="" onmouseover="ImagemHappy()" onmouseout="ImagemAngry()">
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
